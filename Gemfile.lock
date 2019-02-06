@@ -4,6 +4,8 @@ GEM
     mini_portile2 (2.4.0)
     nokogiri (1.10.1)
       mini_portile2 (~> 2.4.0)
+    reverse_markdown (1.1.0)
+      nokogiri
     slop (4.6.2)
 
 PLATFORMS
@@ -11,6 +13,7 @@ PLATFORMS
 
 DEPENDENCIES
   nokogiri (~> 1.10, >= 1.10.1)
+  reverse_markdown (~> 1.0, >= 1.0.3)
   slop (~> 4.3)
 
 BUNDLED WITH
