@@ -32,10 +32,8 @@ module WordPressToMarkdown
       comments = []
       comment_nodes = item.xpath('wp:comments')
 
-      unless comment_nodes.empty?
-        comment_nodes.each do |c|
-          comments << process_comment(c) if comment_is_valid?(c)
-        end
+      comment_nodes.each do |c|
+        comments << process_comment(c) if comment_is_valid?(c)
       end
 
       comments
