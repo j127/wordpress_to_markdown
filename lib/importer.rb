@@ -6,7 +6,7 @@ module WordPressToMarkdown
   class Importer
     require 'nokogiri'
     def initialize(input_file, output_dir)
-      puts "about to convert #{input_file} to markdown and save to #{output_dir}"
+      puts "about to convert #{input_file} to markdown & save to #{output_dir}"
     end
 
     def parse

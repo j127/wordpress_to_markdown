@@ -6,7 +6,7 @@ module WordPressToMarkdown
 
   # Convert WordPress to markdown
   class CLI < Thor
-    require_relative './lib/importer'
+    require_relative 'importer'
 
     desc 'export', 'export WordPress to markdown'
     def export(input_file, output_dir)
@@ -22,5 +22,3 @@ module WordPressToMarkdown
     end
   end
 end
-
-WordPressToMarkdown::CLI.start if $PROGRAM_NAME == __FILE__
